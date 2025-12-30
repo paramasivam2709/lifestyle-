@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Lifestyle Website</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="logo">STACKLY</div>
+
+  <nav id="navMenu">
+    <ul>
+      <li class="dropdown">
+        <a href="#">Home <span>▾</span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Home 1</a></li>
+          <li><a href="#">Home 2</a></li>
+          
+        </ul>
+      </li>
+      <li><a href="#">Design</a></li>
+      <li><a href="#">Lifestyle</a></li>
+      <li><a href="#">Features</a></li>
+      <li><a href="#">Pages</a></li>
+      <li><a href="#">Shop</a></li>
+    </ul>
+  </nav>
+
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+</header>
+
+<!-- SLIDER -->
+<section class="slider">
+  <div class="slide active" style="background-image:url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee');">
+    <div class="overlay"></div>
+    <div class="content">
+      <h1>All Journeys Have Secret Destinations</h1>
+      <p>Happiness is a choice. Choose wisely.</p>
+      <button>Read More</button>
+    </div>
+  </div>
+
+  <div class="slide" style="background-image:url('https://images.unsplash.com/photo-1501785888041-af3ef285b470');">
+    <div class="overlay"></div>
+    <div class="content">
+      <h1>Explore The World</h1>
+      <p>Discover new places and stories.</p>
+      <button>Explore</button>
+    </div>
+  </div>
+
+  <div class="slide" style="background-image:url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e');">
+    <div class="overlay"></div>
+    <div class="content">
+      <h1>Live Your Adventure</h1>
+      <p>Make memories everywhere you go.</p>
+      <button>Start Now</button>
+    </div>
+  </div>
+
+  <!-- DOTS -->
+  <div class="dots">
+    <span class="active" onclick="showSlide(0)"></span>
+    <span onclick="showSlide(1)"></span>
+    <span onclick="showSlide(2)"></span>
+  </div>
+</section>
+
+<!-- EDITORS PICKS -->
+<section class="editors-picks">
+  <h2 class="section-title">Editor’s Picks</h2>
+
+  <div class="pick-container fade-up">
+    <div class="pick-image">
+      <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" alt="Editors Pick">
+    </div>
+
+    <div class="pick-content">
+      <h3>Brand Identity for Studio Awesomeness</h3>
+      <span class="category">BRANDING, DESIGN</span>
+      <p>
+        Life is one big road with lots of signs. So when you riding through the ruts,
+        don’t complicate your mind...
+      </p>
+      <a href="#" class="btn">Read More</a>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURE SECTION 1 -->
+<section class="feature-post">
+  <div class="feature-container fade-up">
+    
+    <div class="feature-content">
+      <h2>50 Amazing Examples of Portrait Photography</h2>
+      <span class="category">ART, ARTISTS, STORIES</span>
+      <p>
+        The real voyage of discovery consists not in seeking new lands but seeing
+        with new eyes. Lorem ipsum dolor sit...
+      </p>
+      <a href="#" class="btn">Read More</a>
+    </div>
+
+    <div class="feature-image">
+      <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e" alt="">
+    </div>
+
+  </div>
+</section>
+
+<!-- FEATURE SECTION 2 -->
+<section class="feature-post alt">
+  <div class="feature-container fade-up">
+
+    <div class="feature-image">
+      <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470" alt="">
+    </div>
+
+    <div class="feature-content">
+      <h2>Spending a Week in the Misty Forest</h2>
+      <span class="category">NATURE, PHOTOGRAPHY</span>
+      <p>
+        The real voyage of discovery consists not in seeking new lands but seeing
+        with new eyes. Lorem ipsum dolor sit...
+      </p>
+      <a href="#" class="btn">Read More</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- LATEST ARTICLES -->
+<section class="latest-articles">
+  <h2 class="section-title white">Latest Articles</h2>
+
+  <div class="articles-grid">
+
+    <article class="article-card tall fade-up">
+      <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
+      <div class="overlay">
+        <h3>Life is an Adventure if You Choose to Make it One</h3>
+        <span>INTERVIEW, STORIES</span>
+      </div>
+    </article>
+
+    <article class="article-card fade-up">
+      <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085">
+      <div class="overlay">
+        <h3>States of Matter</h3>
+        <span>ART, DESIGN</span>
+      </div>
+    </article>
+
+    <article class="article-card wide fade-up">
+      <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470">
+      <div class="overlay">
+        <h3>Spending a Week in the Misty Forest</h3>
+        <span>NATURE, PHOTOGRAPHY</span>
+      </div>
+    </article>
+
+    <article class="article-card fade-up">
+      <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e">
+      <div class="overlay">
+        <h3>Step Inside: Eric Barrett Studio</h3>
+        <span>INTERVIEW, STORIES</span>
+      </div>
+    </article>
+
+    <article class="article-card tall fade-up">
+      <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429">
+      <div class="overlay">
+        <h3>Modern Interior Design Ideas</h3>
+        <span>ARCHITECTURE, INTERIORS</span>
+      </div>
+    </article>
+    <!-- LOAD MORE -->
+<section class="load-more-section">
+  <button class="load-more-btn">LOAD MORE</button>
+</section>
+
+
+
+
+
+  </div>
+</section>
+
+<!-- TODAYS BEST -->
+<section class="todays-best">
+  <h2 class="section-title">Today’s Best</h2>
+
+  <div class="best-grid">
+
+    <div class="best-item fade-up">
+      <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
+      <div class="best-content">
+        <h3>Life is an Adventure if You Choose to Make it One</h3>
+        <span>INTERVIEW, STORIES</span>
+        <p>People think focus means saying yes to the thing you’ve got to focus on. But...</p>
+      </div>
+    </div>
+
+    <div class="best-item fade-up">
+      <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e">
+      <div class="best-content">
+        <h3>Step Inside: Eric Barrett Studio</h3>
+        <span>INTERVIEW, STORIES</span>
+        <p>The real voyage of discovery consists not in seeking new lands but seeing with new...</p>
+      </div>
+    </div>
+
+    <div class="best-item fade-up">
+      <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6">
+      <div class="best-content">
+        <h3>Interview with Kate Angelo</h3>
+        <span>ARTISTS, STORIES</span>
+        <p>Cras purus turpis, laoreet eget hendrerit id, ornare commodo augue...</p>
+      </div>
+    </div>
+
+    <div class="best-item fade-up">
+      <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429">
+      <div class="best-content">
+        <h3>Favourite Photography Exhibition – Power in Silence</h3>
+        <span>LIFESTYLE, PHOTOGRAPHY</span>
+        <p>The real voyage of discovery consists not in seeking new lands but seeing with new...</p>
+      </div>
+    </div>
+
+    <div class="best-item fade-up">
+      <img src="https://images.unsplash.com/photo-1494475673543-6a6a27143b16">
+      <div class="best-content">
+        <h3>All Journeys have Secret Destinations</h3>
+        <span>LIFESTYLE, TRAVEL</span>
+        <p>Happiness is a choice. You can choose to be happy. There’s going to be stress...</p>
+      </div>
+    </div>
+
+    <div class="best-item fade-up">
+      <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e">
+      <div class="best-content">
+        <h3>50 Amazing Examples of Portrait Photography</h3>
+        <span>ART, ARTISTS, STORIES</span>
+        <p>The real voyage of discovery consists not in seeking new lands but seeing with new...</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- FEATURED SPLIT -->
+<section class="featured-split">
+
+  <div class="split-card fade-up">
+    <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470" alt="">
+    <div class="split-overlay">
+      <h2>Spending a Week in the Misty Forest</h2>
+      <span>NATURE, PHOTOGRAPHY</span>
+    </div>
+  </div>
+
+  <div class="split-card fade-up">
+    <img src="https://images.unsplash.com/photo-1492724441997-5dc865305da7" alt="">
+    <div class="split-overlay">
+      <h2>Underwater Photography Collection – Explore the Depths</h2>
+      <span>NATURE, PHOTOGRAPHY</span>
+    </div>
+  </div>
+
+</section>
+<!-- FOOTER TOP CONTENT -->
+<section class="footer-top">
+
+  <!-- POPULAR ARTICLES -->
+  <div class="footer-box">
+    <h3>Popular Articles</h3>
+    <div class="divider"></div>
+
+    <div class="popular-item">
+      <span class="num">1</span>
+      <div>
+        <h4>Minimalist Home Design Inspirations</h4>
+        <small>February 18, 2018</small>
+      </div>
+    </div>
+
+    <div class="popular-item">
+      <span class="num">2</span>
+      <div>
+        <h4>Brand Identity for Studio Awesomeness</h4>
+        <small>March 13, 2018</small>
+      </div>
+    </div>
+
+    <div class="popular-item">
+      <span class="num">3</span>
+      <div>
+        <h4>Life is an Adventure if You Choose to Make it One</h4>
+        <small>March 29, 2018</small>
+      </div>
+    </div>
+  </div>
+
+  <!-- FEATURED COLLECTIONS -->
+  <div class="footer-box">
+    <h3>Featured Collections</h3>
+    <div class="divider"></div>
+
+    <div class="collections-grid">
+      <div class="collection-card">
+        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4">
+        <span>Branding <small>3</small></span>
+      </div>
+
+      <div class="collection-card">
+        <img src="https://images.unsplash.com/photo-1492724441997-5dc865305da7">
+        <span>Lifestyle <small>4</small></span>
+      </div>
+
+      <div class="collection-card">
+        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
+        <span>Photography <small>14</small></span>
+      </div>
+
+      <div class="collection-card">
+        <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470">
+        <span>Stories <small>11</small></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- NEWSLETTER -->
+  <div class="footer-box">
+    <h3>Subscribe To Our Newsletter</h3>
+    <div class="divider"></div>
+
+    <p>
+      The real voyage of discovery consists not in seeking new lands but seeing with new eyes.
+      All journeys have secret destinations of which the traveler is unaware.
+    </p>
+
+    <div class="newsletter">
+      <input type="email" placeholder="Your Email">
+      <button>✉</button>
+    </div>
+
+    <div class="social-icons">
+      <i>f</i>
+      <i>t</i>
+      <i>p</i>
+      <i>▶</i>
+      <i>◎</i>
+    </div>
+  </div>
+
+</section>
+<!-- MAIN FOOTER -->
+<footer class="main-footer">
+  <div class="footer-container">
+
+    <div class="footer-left">
+      <p>© 2025 STACKLY. All Rights Reserved.</p>
+    </div>
+
+    <div class="footer-right">
+      <a href="#">Home</a>
+      <a href="#">Lifestyle</a>
+      <a href="#">Travel</a>
+      <a href="#">Photography</a>
+      <a href="#">Contact</a>
+    </div>
+
+  </div>
+</footer>
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
