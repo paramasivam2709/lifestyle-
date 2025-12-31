@@ -30,6 +30,13 @@
   font-weight: bold;
 }
 
+/* Make the header logo image appear white on dark header backgrounds */
+.header .logo img {
+  width: 130px;
+  filter: invert(1) brightness(2);
+  -webkit-filter: invert(1) brightness(2);
+}
+
 /* NAV */
 nav ul {
   list-style: none;
